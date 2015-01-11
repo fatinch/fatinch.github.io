@@ -1,0 +1,156 @@
+body {
+font-family:Helvetica, Arial, sans-serif;
+font-size:13pt;
+background-color: #fff;}
+
+h1,h3,h4,h5,h6 {font-size:31px;font-weight:normal;color:#FC2B3B;margin:0;text-transform:uppercase;}
+h2 {font-size:31px;font-weight:normal;color:#FC2B3B;margin:0;}
+p {line-height:100%;}
+ul {list-style-type: square;}
+li {line-height:1em; margin-top:0.1em; margin-bottom:0.1em; padding-top:0.1em; padding-bottom:0.1em;}
+blockquote {line-height:131%;font-size:85%;color:#094791;border:1px dotted #ccc;padding:2em 3em 2em 3em;margin:0;text-align:center;}
+
+ol {list-style:upper-roman:}
+ol ol {list-style:upper-latin;}
+ol ol ol {list-style:decimal;}
+ol ol ol ol {list-style:lower-latin;}
+
+/* ---------------------------------------------------------
+//
+//  HEADER
+//
+// -------------------------------------------------------*/
+
+.header {
+	overflow: hidden;
+	/*padding: 5px;*/
+	/*border-top: 1px solid #0B6EFF;*/
+	/*border-bottom: px solid #E6E6E6;*/	
+}
+
+.header .logo {
+	float: left;
+	margin: 0 25px 0 0;
+}
+.header .logo a:link,
+.header .logo a:visited {
+	display: block;
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	/*background-image: url(img/assets);*/
+	background-position: 0 0;
+	background-size: cover;
+	border-width: 0;
+}
+.header .logo a:hover {
+	background-position: 0 -70px;
+	border-width: 0;
+}
+.header ul.nav {
+	float: left;
+	overflow: hidden;
+	margin: 20px 0 0 0;
+}
+.header ul.nav li {
+	float: left;
+	margin: 0 20px 0 0;
+	font-size: 1.3em;
+}
+
+body#work .header ul.nav li.work a:link,
+body#work .header ul.nav li.work a:visited,
+body#talks .header ul.nav li.talks a:link,
+body#talks .header ul.nav li.talks a:visited,
+body#info .header ul.nav li.info a:link,
+body#info .header ul.nav li.info a:visited,
+body#news .header ul.nav li.news a:link,
+body#news .header ul.nav li.news a:visited,
+body#photos .header ul.nav li.photos a:link,
+body#photos .header ul.nav li.photos a:visited {
+	color: #000;
+	border-bottom: 2px solid #000;
+}
+body#info .header ul.nav li.info a:hover {
+	text-decoration: none;
+}
+.header ul.contacts {
+	float: right;
+	margin: 28px 0 0 0;
+}
+.header ul.contacts li {
+	float: left;
+	margin: 0 0 0 20px;
+	line-height: 1.3;
+}
+
+/* Narrow */
+
+@media screen and (max-width: 800px) {
+	
+	.header {
+		padding: 20px 10px 20px 20px;
+	}
+	.header .logo,
+	.header ul.nav,
+	.header ul.contacts {
+		float: left;
+		width: 90px;
+	}
+	.header .logo {
+		margin: 0 0 0 0;
+	}
+	.header .logo a:link,
+	.header .logo a:visited {
+		/*background-image: url(img/assets);*/
+	}
+	.header ul.nav {
+		margin: 0 0px 0 0;
+	}
+	.header ul.nav li {
+		float: none;
+		font-size: 1.1em;
+		border-right: 1px solid #E6E6E6;
+		border-right-width: 0;
+	}
+	.header ul.contacts {
+		float: left;
+		margin: 5px 0 0 0;
+	}
+	.header ul.contacts li {
+		float: none;
+		font-size: .9em;
+		margin: 0 0 5px 0;
+	}
+	
+}
+
+/*--------------Finito Headers----------------*/
+
+/* Links */
+
+a:link, a:visited, .blue {
+	color: #0B6EFF;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+a:hover {
+	color: #094791;
+	/*text-decoration: underline;*/
+	border-bottom: 0.75px solid #094791;
+}
+
+a:active {
+	color: #FC2B3B;
+}
+a:hover img {
+	vertical-align: bottom;
+	border-width: 0;
+}
+
+/*img:hover {
+	cursor: pointer;
+    	opacity: 1;
+}
+*/
